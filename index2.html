@@ -15,7 +15,7 @@
  
 	<main>
 		<section class="section__ourproducts">
-			<h2>Наши продукты</h2>
+			<h2 class="section_title">Наши продукты</h2>
 				<div>
 					<div>
 						<a href="">Императорские устрицы</a>
@@ -67,23 +67,32 @@
 
 		</section>
 
-		<section>
-			<h2>Сделать заказ</h2>
-				<div>Оставьте нам свои контакты
-					<form>
-						<input>
-						<input>
-						<input>
-						<input>
-						<button>Отправить</button>
-					</form>
+		<section class="section__order">
+			<h2 class="section_title">Сделать заказ</h2>
+
+				<div class="section__order_contacts">
+					<div class="section__order_contacts_form1"> <p class="section__order_contacts_opt1">Оставьте нам свои контакты</p>
+						<form>
+							<input class="section__order_contacts_form_contact" type="text" name="Name" placeholder="Как Вас зовут?" id="name"> <br>
+							<input class="section__order_contacts_form_contact" type="text" name="Phone" placeholder="Ваш номер телефона" id="phone"> <br>
+							<input class="section__order_contacts_form_contact" type="text" name="Email" placeholder="Или Email" id="email"> <br>
+							<input class="section__order_contacts_form_message" type="text" name="Message" placeholder="Пожелания или вопросы" id="message"> <br>
+							<button class="section__order_contacts_form_button" id="button">Отправить</button>
+						</form>
+					</div>
+
+					<div class="section__order_contacts_form2">
+						<p class="section__order_contacts_opt2">Свяжитесь с нами</p>
+						<p class="section__order_contacts_contactus">+7 903 163 90 36</p>
+						<p class="section__order_contacts_contactus">julia-litvinenko@yandex.ru</p>
+					</div>
+
 				</div>
-				<div>Или</div>
-				<div>Свяжитесь с нами</div>
-			<div>Полезная информация</div>
+
 		</section>
+
 		<section>
-			<h2>Полезная информация</h2>
+			<h2 class="section_title">Полезная информация</h2>
 				<article>
 					<img src="" alt="">
 					<h4>Статья 1</h4>
@@ -99,7 +108,7 @@
 			<div>Несколько цифр</div>
 		</section>
 		<section>
-			<h2>Несколько цифр</h2>
+			<h2 class="section_title">Несколько цифр</h2>
 				<div></div>
 				<div></div>
 				<div></div>
