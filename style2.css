@@ -1,0 +1,259 @@
+@font-face {
+	font-weight: 100;
+	font-family: "AvenirNext";
+	src: url("./fonts/AvenirNext/AvenirNextCyr-Thin.ttf");
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: "AvenirNext";
+	src: url("./fonts/AvenirNext/AvenirNextCyr-Regular.ttf");
+}
+
+@font-face {
+	font-weight: 600;
+	font-family: "AvenirNext";
+	src: url("./fonts/AvenirNext/AvenirNextCyr-Demi.ttf");
+}
+
+@font-face {
+	font-weight: 100;
+	font-family: "OpenSans";
+	src: url("./fonts/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: "OpenSans";
+	src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-weight: 600;
+	font-family: "OpenSans";
+	src: url("./fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+
+@font-face {
+	font-weight: 100;
+	font-family: "ProximaNova";
+	src: url("./fonts/ProximaNova/ProximaNova-Light.otf");
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: "ProximaNova";
+	src: url("./fonts/ProximaNova/ProximaNova-Reg.otf");
+}
+
+@font-face {
+	font-weight: 600;
+	font-family: "ProximaNova";
+	src: url("./fonts/ProximaNova/ProximaNova-Bold.otf");
+}
+
+@font-face {
+	font-weight: 100;
+	font-family: "Montserrat";
+	src: url("./fonts/Montserrat/Montserrat-Thin.ttf");
+}
+
+@font-face {
+	font-weight: 300;
+	font-family: "Montserrat";
+	src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "EntypoSocial";
+	src: url("./fonts/entypo-social.ttf");
+}
+
+@font-face {
+	font-weight: 600;
+	font-family: "Montserrat";
+	src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+.header {
+	background-color: #fff;	
+	background-image: url(./images/header_fl.jpeg);	
+	background-position: center bottom;	
+	background-size: cover;
+	background-repeat: no-repeat;	
+	height: 550px;
+	position: relative;
+}
+
+.header::after {
+	display: block;
+	color: rgba(0,176,80,0);
+	height: 450px;
+}
+
+.header__title {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 200px;
+}
+
+.section__ourproducts {
+	height: 550px;
+	background-color: #fff;
+}
+
+.section__delivery {
+	height: 550px;
+	background-color: #e6eff6;
+}
+
+.section_title {
+	font-weight: 600;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 35px;
+}
+
+.section__delivery_steps {
+	display: flex;
+	margin: auto;
+	max-width: 1000px;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 75px;
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.section__delivery {
+	height: 800px;
+	}
+
+	.section__delivery_steps {
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-top: 25px;
+		min-height: 500px;
+		align-items: center;
+	}
+}
+
+.section__delivery_step_1 {
+	background-color: white;
+	border-color: navy;
+	border-width: 1px;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	border: solid;
+	position: relative;
+}
+
+.section__delivery_step_2 {
+	background-color: white;
+	border-color: navy;
+	border-width: 1px;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	border: solid;
+	position: relative;
+}
+
+.section__delivery_step_3 {
+	background-color: white;
+	border-color: navy;
+	border-width: 1px;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	border: solid;
+	position: relative;
+}
+
+.section__delivery_image_1 {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.section__delivery_image_2 {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+.section__delivery_image_3 {
+	position: absolute;
+	top: 30px;
+	left: 25px;
+}
+
+.section__delivery_description {
+	list-style: none;
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 45px;
+	line-height: 1.7;
+}
+
+.footer {
+	background-color: #000;	
+	background-image: url(./images/footer_fl.jpg);	
+	background-position: left bottom;	
+	background-size: cover;
+	background-repeat: no-repeat;	
+	height: 450px;
+	text-align: center;
+	position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    background-color: red;
+    background-image: none;
+  }
+}
+
+  .footer__head {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+  	font-size: 35px;
+  	padding: 40px 0px 0px 0px;
+  }
+
+.footer__IG {
+
+}
+
+  .footer__links {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+  	text-decoration: underline;
+  	font-size: 15px;
+	line-height: 30px;
+  }
+
+  .footer__text {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+  	font-size: 15px;
+  	line-height: 30px;
+  	padding: 50px 0px;
+  }
