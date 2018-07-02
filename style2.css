@@ -228,7 +228,7 @@
 @media only screen and (max-width: 767px) {
 	
 	.section__order {
-	height: 925px;
+	height: 1015px;
 	}
 
 	.section__order_contacts {
@@ -259,6 +259,12 @@
 }
 
 .section__order_contacts_form2 {
+	margin-top: 10px;
+	height: 80px;
+	width: 30px;
+}
+
+.section__order_contacts_form3 {
 	background-color: #e6eff6;
 	margin-top: 10px;
 	height: 391px;
@@ -301,24 +307,52 @@
 	margin-top: 10px;
 }
 
+.section__order_contacts_alt {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
 .section__order_contacts_opt2 {
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
 	font-size: 20px;
-	text-align: left;
+	text-align: center;
     margin: 30px 40px;
 	width: 290px;
 }
 
-.section__order_contacts_contactus {
+.section__order_contacts_contactus1 {
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
-	font-size: 15px;	
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 60px;
 }
 
+.section__order_contacts_contactus2 {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 50px;
+}
 
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.picture {
+	text-align: center;
+}
 
 
 
