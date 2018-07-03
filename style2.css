@@ -103,9 +103,132 @@
 }
 
 .section__ourproducts {
-	height: 550px;
+	height: 700px;
 	background-color: #fff;
 }
+
+
+
+
+.tab-box {							/* Вся таблица с вкладками*/
+	margin: 30px 100px 30px 100px;
+	position: relative;
+}
+
+/*.tab-box:after{
+  clear:both; 
+  content:""; 
+  display:block;
+}*/
+
+.tab-nav {							/*Общий вид боковых вкладок, фон*/
+	list-style: none;
+	width: 100px;
+	float: left;
+}
+
+.tab-nav li {						/*Вид боковых вкладок в инактивном состоянии*/
+	float:left;
+	margin-bottom:1px;
+	background: #fff;
+}
+
+.tab-nav li a {						/*Общий вид боковых вкладок, текст*/
+	display:inline-block;
+	height: 70px;
+	width:250px;
+	padding-top: 50px;
+	padding-left: 15px;
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 17px;
+	text-align: left;
+	text-decoration:none;
+}
+
+.tab-nav li a:hover {				/*Поведение при наведении на вкладку*/
+	background: #f0f7fb;
+}
+
+.tab-nav li.select a {				/*Вид выбранной вкладки*/
+	background: #e6eff6;
+}
+
+/*.tab-nav .active{
+  display:inline-block;
+  padding:5px;
+}
+
+.tab-box>div{
+  margin:0 0 0 100px;
+  padding:10px;
+  border:solid 1px red;
+  background:red;
+}*/
+
+.tab-panels {						/*Вид блока-описания*/
+	height: 483px;
+	background-color: #e6eff6;
+}
+
+.tab_image {
+	border-radius: 50%;
+	position: absolute;
+	top: 65px;
+	left: 355px;
+}
+
+.tab-panels h3 {
+	font-weight: 600;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 17px;
+	position: absolute;
+	top: 50px;
+	right: 130px;
+}
+
+.tab_text {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	top: 90px;
+	right: 100px;
+	text-align: justify;
+	width: 220px; 
+}
+
+.tab-panels a {
+	font-weight: 600;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 17px;
+	position: absolute;
+	bottom: 50px;
+	right: 100px;
+	text-decoration: none;
+	background-color: #fff;
+	border: solid 1px #cddfed;
+	padding: 15px 68px;
+}
+
+.tab_price {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	bottom: 65px;
+	left: 355px;
+	text-align: left;
+}
+
+
+
+
 
 .section__delivery {
 	height: 550px;
@@ -382,8 +505,9 @@
   	padding: 40px 0px 0px 0px;
   }
 
-.footer__IG {
-
+.instagram {
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
   .footer__links {
@@ -403,3 +527,7 @@
   	line-height: 30px;
   	padding: 50px 0px;
   }
+
+.picture_footer {
+	text-align: center;
+}
