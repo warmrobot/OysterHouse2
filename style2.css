@@ -112,7 +112,13 @@
 
 .tab-box {							/* Вся таблица с вкладками*/
 	margin: 30px 100px 30px 100px;
-	position: relative;
+}
+
+.tab-box-flex {
+	display: flex;
+	flex-direction: row;
+	width: 1080px;
+	min-width: 700px;
 }
 
 /*.tab-box:after{
@@ -123,12 +129,10 @@
 
 .tab-nav {							/*Общий вид боковых вкладок, фон*/
 	list-style: none;
-	width: 100px;
-	float: left;
+	width: 360px;
 }
 
 .tab-nav li {						/*Вид боковых вкладок в инактивном состоянии*/
-	float:left;
 	margin-bottom:1px;
 	background: #fff;
 }
@@ -136,7 +140,7 @@
 .tab-nav li a {						/*Общий вид боковых вкладок, текст*/
 	display:inline-block;
 	height: 70px;
-	width:250px;
+	width:360px;
 	padding-top: 50px;
 	padding-left: 15px;
 	font-weight: 100;
@@ -167,16 +171,36 @@
   background:red;
 }*/
 
-.tab-panels {						/*Вид блока-описания*/
+.tab-panels-1{						/*Вид блока-описания*/
 	height: 483px;
+	width: 360px;
 	background-color: #e6eff6;
+}
+
+.tab-panels-2 {						/*Вид блока-описания*/
+	height: 483px;
+	width: 360px;
+	background-color: #e6eff6;
+}
+
+.section__ourproducts_description_flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 685px;
+	min-width: 500px;
+	position: absolute;
+	top: 50px;
+	right: 70px;
 }
 
 .tab_image {
 	border-radius: 50%;
-	position: absolute;
-	top: 65px;
-	left: 355px;
+	margin-top: 5px;
+}
+
+.empty {
+	height: 140px;
 }
 
 .tab-panels h3 {
@@ -184,9 +208,7 @@
 	font-family: "OpenSans";
 	color: black;
 	font-size: 17px;
-	position: absolute;
-	top: 50px;
-	right: 130px;
+	margin-bottom: 17px;
 }
 
 .tab_text {
@@ -194,11 +216,10 @@
 	font-family: "OpenSans";
 	color: black;
 	font-size: 15px;
-	position: absolute;
-	top: 90px;
-	right: 100px;
 	text-align: justify;
-	width: 220px; 
+	width: 300px;
+	min-width: 220px; 
+	height: 325px;
 }
 
 .tab-panels a {
@@ -206,9 +227,6 @@
 	font-family: "OpenSans";
 	color: black;
 	font-size: 17px;
-	position: absolute;
-	bottom: 50px;
-	right: 100px;
 	text-decoration: none;
 	background-color: #fff;
 	border: solid 1px #cddfed;
@@ -220,9 +238,6 @@
 	font-family: "OpenSans";
 	color: black;
 	font-size: 15px;
-	position: absolute;
-	bottom: 65px;
-	left: 355px;
 	text-align: left;
 }
 
