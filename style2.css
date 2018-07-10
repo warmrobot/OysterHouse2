@@ -84,12 +84,23 @@
 	background-repeat: no-repeat;	
 	height: 550px;
 	position: relative;
+	z-index: 1;
 }
 
 .header::after {
+	position: absolute;
+	top: 0px;
 	display: block;
-	color: rgba(0,176,80,0);
-	height: 450px;
+	background-color: rgba(179,206,227,0.7);
+	height: 550px;
+	width: 100%;
+	content: "";
+	z-index: 2;
+}
+
+.section_title_container {
+	z-index: 3;
+	position: relative;
 }
 
 .header__title {
@@ -99,12 +110,27 @@
 	font-size: 35px;
 	text-align: center;
 	margin-top: 0;
-	padding-top: 200px;
+	padding-top: 230px;
 }
 
 .section__ourproducts {
 	height: 700px;
 	background-color: #fff;
+	position: relative;
+}
+
+.section__ourproducts::after {
+	position: absolute;
+	top: -29px;
+	display: block;
+	background-image: url(./images/sea.svg);
+	background-position: center bottom;	
+	height: 30.2px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	content: "";
+	z-index: 4;
 }
 
 .tab-box {							/* Вся таблица с вкладками*/
