@@ -107,9 +107,6 @@
 	background-color: #fff;
 }
 
-
-
-
 .tab-box {							/* Вся таблица с вкладками*/
 	margin: 30px 100px 30px 100px;
 }
@@ -120,12 +117,6 @@
 	width: 1080px;
 	min-width: 700px;
 }
-
-/*.tab-box:after{
-  clear:both; 
-  content:""; 
-  display:block;
-}*/
 
 .tab-nav {							/*Общий вид боковых вкладок, фон*/
 	list-style: none;
@@ -159,19 +150,7 @@
 	background: #e6eff6;
 }
 
-/*.tab-nav .active{
-  display:inline-block;
-  padding:5px;
-}
-
-.tab-box>div{
-  margin:0 0 0 100px;
-  padding:10px;
-  border:solid 1px red;
-  background:red;
-}*/
-
-.tab-panels-1{						/*Вид блока-описания*/
+.tab-panels-1 {						/*Вид блока-описания*/
 	height: 483px;
 	width: 360px;
 	background-color: #e6eff6;
@@ -183,35 +162,16 @@
 	background-color: #e6eff6;
 }
 
-.section__ourproducts_description_flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 685px;
-	min-width: 500px;
-	position: absolute;
-	top: 50px;
-	right: 70px;
-}
-
 .tab_image {
 	border-radius: 50%;
 	margin-top: 5px;
 }
 
-.empty {
-	height: 140px;
+.tab-panels-2 h3 {
+	display: none;
 }
 
-.tab-panels h3 {
-	font-weight: 600;
-	font-family: "OpenSans";
-	color: black;
-	font-size: 17px;
-	margin-bottom: 17px;
-}
-
-.tab_text {
+.tab-text {
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
@@ -222,7 +182,7 @@
 	height: 325px;
 }
 
-.tab-panels a {
+.tab-panels-2 a {
 	font-weight: 600;
 	font-family: "OpenSans";
 	color: black;
@@ -242,7 +202,103 @@
 }
 
 
+@media only screen and (max-width: 767px) {
 
+	.section__ourproducts {
+		height: 1000px;
+	}
+
+	.tab-box {							/*Вся таблица с вкладками*/
+		width: 100%;
+		margin: 0;
+	}
+
+	.tab-box-flex {
+		display: flex;
+		flex-direction: column-reverse;
+		min-width: 360px;
+		width: 700px;
+		margin: auto;
+	}
+
+	.tab-nav {							/*Общий вид боковых вкладок, фон*/
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 700px;
+	}
+
+	.tab-nav li {						/*Вид боковых вкладок в инактивном состоянии*/
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		border: solid 1px black;
+		margin: 10px;
+	}
+
+	.tab-nav li a {						/*Общий вид боковых вкладок, текст*/
+		display: block;
+		height: 10px;
+		width: 10px;
+		border-radius: 10px;
+	}
+
+	.tab-nav li a:hover {				/*Поведение при наведении на вкладку*/
+		background: red;
+	}
+
+	.tab-nav li.select a {				/*Вид выбранной вкладки*/
+		background: green;
+	}
+
+	.tab-panels-1 {						/*Вид блока-описания*/
+		display: none;
+	}
+
+	.tab-panels-2 {						/*Вид блока-описания*/
+		height: 550px;
+		width: 360px;
+		background-color: #fff;
+	}
+
+	.tab-panels-2 h3 {
+		font-weight: 600;
+		font-family: "OpenSans";
+		color: black;
+		font-size: 17px;
+		margin-bottom: 17px;
+		text-align: center;
+	}
+
+	.tab-text {
+		font-weight: 100;
+		font-family: "OpenSans";
+		color: black;
+		font-size: 15px;
+		text-align: justify;
+		width: 300px;
+}
+
+	.tab-panels-2 a {
+		font-weight: 600;
+		font-family: "OpenSans";
+		color: black;
+		font-size: 17px;
+		text-decoration: none;
+		background-color: #fff;
+		border: solid 1px #cddfed;
+		padding: 15px 68px;
+	}
+
+	.tab_price {
+		font-weight: 100;
+		font-family: "OpenSans";
+		color: black;
+		font-size: 15px;
+		text-align: left;
+	}
+
+}
 
 
 .section__delivery {

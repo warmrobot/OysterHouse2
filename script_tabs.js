@@ -10,3 +10,16 @@ $(function(){
     return (false);                                           // - прерывается обработка события onClick
   })
 })
+
+
+//  $(document).ready(function() {
+//    var w = $(window).width(); 									// Получаем ширину окна
+//    if (w <= 600) { 											// Если ширина окна меньше, либо равна 600
+//  		$("tab-panels-1-mb").empty(); 							// Очичащем содержимое элементов с class="tab-panels-1-mb"
+//    }
+//  });
+
+
+
+//  $(".block_1").empty(); // Очичащем содержимое элементов с class="block_1"
+//  $(".block_2").remove(); // Удалем полностью элементы с class="block_2"
