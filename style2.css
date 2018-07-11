@@ -135,6 +135,7 @@
 
 .tab-box {							/* Вся таблица с вкладками*/
 	margin: 30px 100px 30px 100px;
+	position: relative;
 }
 
 .tab-box-flex {
@@ -191,6 +192,9 @@
 .tab_image {
 	border-radius: 50%;
 	margin-top: 5px;
+	position: absolute;
+	top: 50px;
+	left: 420px;
 }
 
 .tab-panels-2 h3 {
@@ -206,6 +210,8 @@
 	width: 300px;
 	min-width: 220px; 
 	height: 325px;
+	position: absolute;
+	top: 50px;
 }
 
 .tab-panels-2 a {
@@ -217,6 +223,8 @@
 	background-color: #fff;
 	border: solid 1px #cddfed;
 	padding: 15px 68px;
+	position: absolute;
+	top: 400px;
 }
 
 .tab_price {
@@ -225,6 +233,9 @@
 	color: black;
 	font-size: 15px;
 	text-align: left;
+	position: absolute;
+	top: 415px;
+	left: 420px;
 }
 
 
