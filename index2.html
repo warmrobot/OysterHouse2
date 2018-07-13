@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Oyster House</title>
@@ -13,44 +13,44 @@
 <body>
 
 	<header class="header">
-		<div class="section_title_container">
-			<h1 class="header__title">Я хочу сделать заказ домой</h1>
+		<div class="header__title">
+			<h1> Я хочу сделать заказ домой</h1>
 		</div>
 	</header>
  
 	<main>
 
-		<section class="section__ourproducts">
+		<section class="section-ourproducts">
 
-				<h2 class="section_title">Наши продукты</h2>		
+				<h2 class="section-title">Наши продукты</h2>		
 
-				<div class="tab-box">
+				<div class="ourproducts-description">
 
-					<div class="tab-box-flex">
+					<div class="ourproducts-flexbox">
 
-						<ul class="tab-nav">
-							<li><a id="link1" href="#t1">Хасанские устрицы</a></li>
-							<li><a id="link2" href="#t2">Императорские устрицы</a></li>
-							<li><a id="link3" href="#t3">Гребешок</a></li>
-							<li><a id="link4" href="#t4">Краб</a></li>
+						<ul class="ourproducts-flexbox__nav">
+							<li><a id="tab1" href="#t1">Хасанские устрицы</a></li>
+							<li><a id="tab2" href="#t2">Императорские устрицы</a></li>
+							<li><a id="tab3" href="#t3">Гребешок</a></li>
+							<li><a id="tab4" href="#t4">Краб</a></li>
 						</ul>
 
-						<div class="tab-panels-1">
+						<div class="ourproducts-flexbox__col1">
 							<div id="t1">
-								<img class="tab_image" src="./images/ustrica-hasanskaya.jpg" height=200px width=200px alt="">
-								<p class="tab_price"> <strong>Цена:</strong> 1000 рублей за 10 шт.</p>
+								<img src="./images/ustrica-hasanskaya.jpg" height=200px width=200px alt="">
+								<p> <strong>Цена:</strong> 1000 рублей за 10 шт.</p>
 							</div>
 							<div id="t2">Описание второй вкладки</div>
 							<div id="t3">Описание третьей вкладки</div>
 							<div id="t4">Описание четвертой вкладки</div>
 						</div>
 
-						<div class="tab-panels-3"></div>
+						<div class="ourproducts-flexbox__col2"></div>
 
-						<div class="tab-panels-2">
+						<div class="ourproducts-flexbox__col3">
 							<div id="t1">
 								<h3>Хасанские устрицы</h3>
-								<p class="tab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p class="ourproducts-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 								<a href="">Заказать</a>
 							</div>
 							<div id="t2">Описание второй вкладки</div>
@@ -63,35 +63,38 @@
 
 		</section>
 
-		<section class="section__delivery">
-			<h2 class="section_title">О доставке</h2>
+		<section class="section-delivery">
+			<h2 class="section-title">О доставке</h2>
 
-				<div class="section__delivery_steps">
+				<div class="section-deliverysteps">
 
-					<div class="section__delivery_step_1">
-						<img class="section__delivery_image_1" src="./images/smartphone.svg" alt="" height="60px">
+					<div>
+						<div class="section-deliverysteps__step1">
+							<img class="section__delivery_image_1" src="./images/smartphone.svg" alt="" height="60px">
+						</div>
+						<p class="section__delivery_description">Строка 1</p>
 					</div>
 
-					<div class="section__delivery_step_2">
-						<img class="section__delivery_image_2" src="./images/sea-waves.svg" alt="" height="60px">
+					<div>
+						<div class="section-deliverysteps__step2">
+							<img class="section__delivery_image_2" src="./images/sea-waves.svg" alt="" height="60px">
+						</div>
+						<p class="section__delivery_description">Строка 2</p>
 					</div>
 
-					<div class="section__delivery_step_3">
-						<img class="section__delivery_image_3" src="./images/aeroplane.svg" alt="" height="60px">
+					<div>
+						<div class="section-deliverysteps__step3">
+							<img class="section__delivery_image_3" src="./images/aeroplane.svg" alt="" height="60px">
+						</div>
+						<p class="section__delivery_description">Строка 3</p></div>
 					</div>
 
 				</div>
 
-				<li class="section__delivery_description">
-					<ul>Строка 1</ul>
-					<ul>Строка 2</ul>
-					<ul>Строка 3</ul>
-				</li>
-
 		</section>
 
 		<section class="section__order">
-			<h2 class="section_title">Сделать заказ</h2>
+			<h2 class="section-title">Сделать заказ</h2>
 
 				<div class="section__order_contacts">
 					<div class="section__order_contacts_form1"> <p class="section__order_contacts_opt1">Оставьте нам свои контакты</p>
@@ -120,7 +123,7 @@
 		</section>
 
 		<section>
-			<h2 class="section_title">Полезная информация</h2>
+			<h2 class="section-title">Полезная информация</h2>
 				<article>
 					<img src="" alt="">
 					<h4>Статья 1</h4>
@@ -136,7 +139,7 @@
 			<div>Несколько цифр</div>
 		</section>
 		<section>
-			<h2 class="section_title">Несколько цифр</h2>
+			<h2 class="section-title">Несколько цифр</h2>
 				<div></div>
 				<div></div>
 				<div></div>

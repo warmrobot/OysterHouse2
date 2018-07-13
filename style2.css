@@ -98,12 +98,12 @@
 	z-index: 2;
 }
 
-.section_title_container {
+.header__title {
 	z-index: 4;
 	position: relative;
 }
 
-.header__title {
+.header__title h1 {
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: white;
@@ -127,19 +127,29 @@
 	z-index: 3;
 }
 
-.section__ourproducts {
+.section-ourproducts {
 	height: 700px;
 	background-color: #fff;
 	position: relative;
 	overflow: scroll;
 }
 
-.tab-box {							/* Вся таблица с вкладками*/
+.section-title {
+	font-weight: 600;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 35px;
+}
+
+.ourproducts-description {					/* Вся таблица с вкладками - внешняя форма*/
 	margin-top: 30px;
 	position: relative;
 }
 
-.tab-box-flex {
+.ourproducts-flexbox {						/* Вся таблица с вкладками - внутренняя структура*/
 	display: flex;
 	flex-direction: row;
 	width: 1080px;
@@ -148,17 +158,17 @@
 	margin: auto;
 }
 
-.tab-nav {							/*Общий вид боковых вкладок, фон*/
+.ourproducts-flexbox__nav {					/*Общий вид боковых вкладок, фон*/
 	list-style: none;
 	width: 360px;
 }
 
-.tab-nav li {						/*Вид боковых вкладок в инактивном состоянии*/
+.ourproducts-flexbox__nav li {				/*Вид боковых вкладок в инактивном состоянии*/
 	margin-bottom:1px;
 	background: #fff;
 }
 
-.tab-nav li a {						/*Общий вид боковых вкладок, текст*/
+.ourproducts-flexbox__nav li a {			/*Общий вид боковых вкладок, текст*/
 	display:inline-block;
 	height: 70px;
 	width:360px;
@@ -172,44 +182,55 @@
 	text-decoration:none;
 }
 
-.tab-nav li a:hover {				/*Поведение при наведении на вкладку*/
+.ourproducts-flexbox__nav li a:hover {		/*Поведение при наведении на вкладку*/
 	background: #f0f7fb;
 }
 
-.tab-nav li.select a {				/*Вид выбранной вкладки*/
+.ourproducts-flexbox__nav li.select a {		/*Вид выбранной вкладки*/
 	background: #e6eff6;
 }
 
-.tab-panels-1 {						/*Вид блока-описания*/
+.ourproducts-flexbox__col1 {				/*Вид блока-описания*/
 	height: 483px;
 	width: 340px;
 	background-color: #e6eff6;
 }
 
-.tab-panels-3 {
+.ourproducts-flexbox__col2 {				/*Граница между блоками-описаниями*/
 	height: 430px;
 	width: 40px;
 	border-left: 1px solid #cddfed;
 	background-color: #e6eff6;
 }
 
-.tab-panels-2 {						/*Вид блока-описания*/
+.ourproducts-flexbox__col3 {				/*Вид блока-описания*/
 	height: 483px;
 	width: 340px;
 	background-color: #e6eff6;
 }
 
-.tab_image {
+.ourproducts-flexbox__col1 img {			/*Картинка на большом экране*/
 	border-radius: 50%;
 	margin-top: 55px;
 	margin-left: 65px;
 }
 
-.tab-panels-2 h3 {
+.ourproducts-flexbox__col1 p {				/*Цена на большом экране*/
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 15px;
+	text-align: left;
+	position: absolute;
+	top: 413px;
+	margin-left: 65px;
+}
+
+.ourproducts-flexbox__col3 h3 {				/*Название продукта на малом экране*/
 	display: none;
 }
 
-.tab-text {
+.ourproducts-text {							/*Описание продукта*/
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
@@ -221,7 +242,7 @@
 	top: 50px;
 }
 
-.tab-panels-2 a {
+.ourproducts-flexbox__col3 a {				/*Кнопка заказа*/
 	font-weight: 600;
 	font-family: "OpenSans";
 	color: black;
@@ -234,7 +255,83 @@
 	top: 395px;
 }
 
-.tab_price {
+@media only screen and (max-width: 767px) {
+
+	.section-ourproducts {
+		height: 2000px;
+	}
+
+	.ourproducts-description {					/* Вся таблица с вкладками - внешняя форма*/
+		width: 100%;
+		margin: 0;
+	}
+
+	.ourproducts-flexbox {						/* Вся таблица с вкладками - внутренняя структура*/
+		flex-direction: column-reverse;
+		width: 360px;
+		height: 600px;
+		align-items: center;			/*?*/
+		background-color: yellow;
+	}
+
+	.ourproducts-flexbox__nav {					/*Общий вид боковых вкладок, фон*/
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.ourproducts-flexbox__nav li {				/*Вид боковых вкладок в инактивном состоянии*/
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		border: solid 1px #9abeda;
+		margin: 10px;
+	}
+
+	.ourproducts-flexbox__nav li a {			/*Общий вид боковых вкладок, текст*/
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		padding: 0;
+	}
+
+	.ourproducts-flexbox__nav li a:hover {		/*Поведение при наведении на вкладку*/
+		background: red;
+	}
+
+	.ourproducts-flexbox__nav li.select a {		/*Вид выбранной вкладки*/
+		background: #9abeda;
+	}
+
+	
+.ourproducts-flexbox__col1 {					/*Вид блока-описания*/
+	height: 483px;
+	width: 340px;
+	background-color: #e6eff6;
+}
+
+.ourproducts-flexbox__col2 {					/*Граница между блоками-описаниями*/
+	height: 430px;
+	width: 40px;
+	border-left: 1px solid #cddfed;
+	background-color: #e6eff6;
+}
+
+.ourproducts-flexbox__col3 {					/*Вид блока-описания*/
+	height: 483px;
+	width: 340px;
+	background-color: #e6eff6;
+}
+
+.ourproducts-flexbox__col1 img {				/*Картинка на большом экране*/
+	border-radius: 50%;
+	margin-top: 5px;
+	position: absolute;
+	top: 50px;
+	left: 420px;
+}
+
+.ourproducts-flexbox__col1 p {					/*Цена на большом экране*/
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
@@ -245,88 +342,11 @@
 	margin-left: 65px;
 }
 
-
-@media only screen and (max-width: 767px) {
-
-	.section__ourproducts {
-		height: 2000px;
-	}
-
-	.tab-box {							/*Вся таблица с вкладками*/
-		width: 100%;
-		margin: 0;
-	}
-
-	.tab-box-flex {
-		flex-direction: column-reverse;
-		width: 360px;
-		height: 600px;
-		align-items: center;			/*?*/
-		background-color: yellow;
-	}
-
-	.tab-nav {							/*Общий вид боковых вкладок, фон*/
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.tab-nav li {						/*Вид боковых вкладок в инактивном состоянии*/
-		height: 10px;
-		width: 10px;
-		border-radius: 50%;
-		border: solid 1px #9abeda;
-		margin: 10px;
-	}
-
-	.tab-nav li a {						/*Общий вид боковых вкладок, текст*/
-		height: 10px;
-		width: 10px;
-		border-radius: 50%;
-		padding: 0;
-	}
-
-	.tab-nav li a:hover {				/*Поведение при наведении на вкладку*/
-		background: red;
-	}
-
-	.tab-nav li.select a {				/*Вид выбранной вкладки*/
-		background: #9abeda;
-	}
-
-	
-.tab-panels-1 {						/*Вид блока-описания*/
-	height: 483px;
-	width: 340px;
-	background-color: #e6eff6;
-}
-
-.tab-panels-3 {
-	height: 430px;
-	width: 40px;
-	border-left: 1px solid #cddfed;
-	background-color: #e6eff6;
-}
-
-.tab-panels-2 {						/*Вид блока-описания*/
-	height: 483px;
-	width: 340px;
-	background-color: #e6eff6;
-}
-
-.tab_image {
-	border-radius: 50%;
-	margin-top: 5px;
-	position: absolute;
-	top: 50px;
-	left: 420px;
-}
-
-.tab-panels-2 h3 {
+.ourproducts-flexbox__col3 h3 {					/*Название продукта на малом экране*/
 	display: none;
 }
 
-.tab-text {
+.ourproducts-text {								/*Описание продукта*/
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
@@ -338,7 +358,7 @@
 	top: 50px;
 }
 
-.tab-panels-2 a {
+.ourproducts-flexbox__col3 a {					/*Кнопка заказа*/
 	font-weight: 600;
 	font-family: "OpenSans";
 	color: black;
@@ -351,52 +371,41 @@
 	top: 400px;
 }
 
-.tab_price {
-	font-weight: 100;
-	font-family: "OpenSans";
-	color: black;
-	font-size: 15px;
-	text-align: left;
-	position: absolute;
-	top: 415px;
-	left: 420px;
 }
 
-
-}
-
-
-.section__delivery {
+.section-delivery {
 	height: 550px;
 	background-color: #e6eff6;
 }
 
-.section_title {
-	font-weight: 600;
-	font-family: "OpenSans";
-	color: black;
-	font-size: 25px;
-	text-align: center;
-	margin-top: 0;
-	padding-top: 35px;
-}
-
-.section__delivery_steps {
+.section-deliverysteps {
 	display: flex;
 	margin: auto;
 	max-width: 1000px;
 	flex-direction: row;
 	justify-content: space-around;
 	margin-top: 75px;
+	align-items: flex-end;
+	position: relative;
+}
+
+.section-delivery__steps::after {			/*Соединительная линия*/
+	height: 1px;
+	width: 550px;
+	border-top: dotted 2px black;
+	content: "";
+	z-index: 1;
+	position: absolute;
+	top: 60px;
 }
 
 @media only screen and (max-width: 767px) {
 	
-	.section__delivery {
+	.section-delivery {
 	height: 800px;
 	}
 
-	.section__delivery_steps {
+	.section-deliverysteps {
 		display: flex;
 		margin: auto;
 		flex-direction: column;
@@ -407,7 +416,7 @@
 	}
 }
 
-.section__delivery_step_1 {
+.section-deliverysteps__step1 {
 	background-color: white;
 	border-color: navy;
 	border-width: 1px;
@@ -416,9 +425,10 @@
 	width: 120px;
 	border: solid;
 	position: relative;
+	z-index: 2;
 }
 
-.section__delivery_step_2 {
+.section-deliverysteps__step2 {
 	background-color: white;
 	border-color: navy;
 	border-width: 1px;
@@ -427,9 +437,10 @@
 	width: 120px;
 	border: solid;
 	position: relative;
+	z-index: 2;
 }
 
-.section__delivery_step_3 {
+.section-deliverysteps__step3 {
 	background-color: white;
 	border-color: navy;
 	border-width: 1px;
@@ -438,6 +449,7 @@
 	width: 120px;
 	border: solid;
 	position: relative;
+	z-index: 2;
 }
 
 .section__delivery_image_1 {
@@ -459,14 +471,13 @@
 }
 
 .section__delivery_description {
-	list-style: none;
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
 	font-size: 20px;
 	text-align: center;
-	margin-top: 45px;
-	line-height: 1.7;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .section__order {

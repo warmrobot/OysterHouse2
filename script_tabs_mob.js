@@ -1,14 +1,14 @@
 function setup_for_width(mql) {
 	if (mql.matches) {
-		document.getElementById("link1").innerText = '';
-		document.getElementById("link2").innerText = '';
-		document.getElementById("link3").innerText = '';
-		document.getElementById("link4").innerText = '';
+		document.getElementById("tab1").innerText = '';
+		document.getElementById("tab2").innerText = '';
+		document.getElementById("tab3").innerText = '';
+		document.getElementById("tab4").innerText = '';
 	} else {
-		document.getElementById("link1").innerText = 'Хасанские устрицы';
-		document.getElementById("link2").innerText = 'Императорские устрицы';
-		document.getElementById("link3").innerText = 'Гребешок';
-		document.getElementById("link4").innerText = 'Краб';
+		document.getElementById("tab1").innerText = 'Хасанские устрицы';
+		document.getElementById("tab2").innerText = 'Императорские устрицы';
+		document.getElementById("tab3").innerText = 'Гребешок';
+		document.getElementById("tab4").innerText = 'Краб';
 	}
 }
 
