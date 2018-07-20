@@ -3,7 +3,7 @@ function setup_for_width(mql) {
 		document.getElementById("tab1").innerText = '';
 		document.getElementById("tab2").innerText = '';
 		document.getElementById("tab3").innerHTML = '';
-		document.getElementById("tab4").innerHTML = '<img class="tab4" src="./images/crab.svg" alt="" height=80px width=80px/>';
+		document.getElementById("tab4").innerHTML = '<img class="tab4" src="./images/crab.svg" alt="" height=60px width=60px/>';
 	} else {
 		document.getElementById("tab1").innerText = 'Хасанские устрицы';
 		document.getElementById("tab2").innerText = 'Императорские устрицы';
@@ -12,7 +12,7 @@ function setup_for_width(mql) {
 	}
 }
 
-var mql = window.matchMedia("screen and (max-width: 800px)");
+var mql = window.matchMedia("screen and (max-width: 1023px)");
 
 mql.addListener(setup_for_width); 
 
