@@ -166,6 +166,7 @@ and (min-width: 1025px) {
 	width: 90%;
 	height: 825px;
 	margin-top: 30px;
+	margin: auto;
 }
 
 .ourproducts-flexbox__nav {					/*Общий вид боковых вкладок, фон*/
@@ -194,6 +195,7 @@ and (min-width: 1025px) {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
+	border-radius: 50%;
 	background-color: #cddfed;
 	border: solid 1px #fff;
 }
@@ -202,15 +204,16 @@ and (min-width: 1025px) {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
+	border-radius: 50%;
 	background-color: #f0f7fb;
 	border: solid 1px #fff;
 }
 
 .tab_image {
-	width: 80%;
+	width: 70%;
 	height: auto;
 	position: absolute;
-	padding: 10% 10%;
+	padding: 15% 15%;
 }
 
 .ourproducts-flexbox__col1 {				/*Вид блока-описания*/
@@ -305,7 +308,6 @@ and (min-width: 1024px) {
 		flex-direction: row;
 		width: 960px;
 		background-color: #e6eff6;
-		margin: auto;
 		height: 480px;
 		margin-top: 0;
 	}
