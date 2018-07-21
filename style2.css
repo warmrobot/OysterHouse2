@@ -142,6 +142,7 @@
 	text-align: center;
 	margin-top: 0;
 	padding-top: 35px;
+	padding-bottom: 20px;
 }
 
 .ourproducts-description {					/* Вся таблица с вкладками - внешняя форма*/
@@ -154,25 +155,23 @@
 	flex-direction: row;
 	align-items: center;
 	width: 960px;
-	background-color: red;
+	background-color: #e6eff6;
 	margin: auto;
 }
 
 .ourproducts-flexbox__nav {					/*Общий вид боковых вкладок, фон*/
 	list-style: none;
 	width: 320px;
-	background-color: white;
 }
 
 .ourproducts-flexbox__nav li {				/*Вид боковых вкладок в инактивном состоянии*/
-	margin-bottom:1px;
 	background: #fff;
 }
 
 .ourproducts-flexbox__nav li a {			/*Общий вид боковых вкладок, текст*/
 	display:inline-block;
 	height: 70px;
-	width: 320px;
+	width: 305px;
 	padding-top: 50px;
 	padding-left: 15px;
 	font-weight: 100;
@@ -192,7 +191,7 @@
 }
 
 .ourproducts-flexbox__col1 {				/*Вид блока-описания*/
-	height: 483px;
+	height: 480px;
 	width: 320px;
 	background-color: #e6eff6;
 }
@@ -205,8 +204,8 @@
 }
 
 .ourproducts-flexbox__col3 {				/*Вид блока-описания*/
-	height: 483px;
-	width: 320px;
+	height: 480px;
+	width: 280px;
 	background-color: #e6eff6;
 }
 
@@ -241,7 +240,7 @@
 	color: black;
 	font-size: 15px;
 	text-align: justify;
-	width: 265px; 
+	width: 245px; 
 	height: 325px;
 	position: absolute;
 	top: 50px;
@@ -259,7 +258,7 @@
 	text-decoration: none;
 	background-color: #fff;
 	border: solid 1px #cddfed;
-	padding: 15px 90px;
+	padding: 15px 80px;
 	position: absolute;
 	top: 395px;
 }
@@ -268,7 +267,7 @@
 and (max-width: 1023px) {
 
 	.section-ourproducts {
-		height: 1030px;
+		height: 970px;
 	}
 
 	.ourproducts-description {					/* Вся таблица с вкладками - внешняя форма*/
@@ -280,24 +279,25 @@ and (max-width: 1023px) {
 		flex-direction: column;
 		justify-content: space-between;
 		width: 90%;
-		height: 900px;
-		background-color: #fff;
+		height: 825px;
 		margin-top: 30px;
-		background-color: red;
-		border: solid 1px green;
+		background-color: #fff;
 	}
 
 	.ourproducts-flexbox__nav {					/*Общий вид боковых вкладок, фон*/
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 		width: 90%;
 		margin: auto;
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	.ourproducts-flexbox__nav li {				/*Вид боковых вкладок в инактивном состоянии*/
 		width: 25%;
-		height: 1px;
+		max-width: 100px;
+		height: 0px;
 		margin: 0;
 		background-color: #fff;
 		position: relative;
@@ -306,7 +306,8 @@ and (max-width: 1023px) {
 	.ourproducts-flexbox__nav li a {			/*Общий вид боковых вкладок, текст*/
 		display: block;
 		width: 100%;
-		height: 1px;
+		max-width: 100px;
+		height: 0px;
 		padding: 0;
 	}
 
@@ -326,16 +327,12 @@ and (max-width: 1023px) {
 		border: solid 1px #fff;
 	}
 
-	.tab4 {
+	.tab_image {
+		width: 80%;
+		height: auto;
 		position: absolute;
-		top: 1px;
-		left: 1px;
-	}
-	
-	.ourproducts-flexbox__col3--mobflex {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		padding-top: 10%;
+		padding-left: 10%;
 	}
 
 	.ourproducts-flexbox__col1 {				/*Вид блока-описания*/
@@ -347,9 +344,16 @@ and (max-width: 1023px) {
 	}
 
 	.ourproducts-flexbox__col3 {				/*Вид блока-описания*/
-		height: 775px;
+		height: 725px;
 		width: 90%;
 		background-color: #fff;
+	}
+
+	.ourproducts-flexbox__col3--mobflex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 725px;
 	}
 
 	.ourproducts-flexbox__col3 h3 {				/*Название продукта на малом экране*/
@@ -372,7 +376,7 @@ and (max-width: 1023px) {
 	.ourproducts-text {							/*Описание продукта*/
 		display: inline-block;
 		width: 80%; 
-		height: 215px;
+		height: auto;
 		padding-top: 50px;
 		position: static;
 		margin: auto;
@@ -385,6 +389,7 @@ and (max-width: 1023px) {
 		color: black;
 		font-size: 15px;
 		margin: auto;
+		padding-top: 50px;
 		padding-bottom: 50px;
 	}
 
