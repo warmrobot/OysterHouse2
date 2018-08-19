@@ -10,6 +10,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="script_tabs_Smallscreen.js"></script>
   	<script src="script_tabs_Largescreen.js"></script>
+  	<script src="jquery.maskedinput.min.js"></script>
 
 </head>
 <body>
@@ -63,31 +64,32 @@
 						</div>
 
 					</div>
+
 				</div>
 
 		</section>
 
 		<section class="section-delivery">
+
 			<h2 class="section-title">О доставке</h2>
 
-			<div class="section-delivery-flexbox">
+			<div class="delivery-flexbox">
 
-				<ul class="delivery-flexbox-images">
+				<ul class="delivery-flexbox__images">
 
-
-					<li class="delivery-flexbox-images_steps">
+					<li class="delivery-flexbox__images_steps">
 						<div class="delivery-imagewrap">
 							<img class="delivery_image" src="./images/smartphone.svg" alt="" height="60px">
 						</div>
 					</li>
 
-					<li class="delivery-flexbox-images_steps">
+					<li class="delivery-flexbox__images_steps">
 						<div class="delivery-imagewrap">
 							<img class="delivery_image" src="./images/sea-waves.svg" alt="" height="60px">
 						</div>
 					</li>
 
-					<li class="delivery-flexbox-images_steps">
+					<li class="delivery-flexbox__images_steps">
 						<div class="delivery-imagewrap">
 							<img class="delivery_image" src="./images/aeroplane.svg" alt="" height="60px">
 						</div>
@@ -95,80 +97,67 @@
 
 				</ul>
 
-				<ul class="delivery-flexbox-description">
+				<ul class="delivery-flexbox__description">
 
-					<li class="delivery-flexbox-description_steps">
+					<li class="delivery-flexbox__description_steps">
 						<p class="delivery_description">Строка 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 					</li>
 
-					<li class="delivery-flexbox-description_steps">
+					<li class="delivery-flexbox__description_steps">
 						<p class="delivery_description">Строка 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 					</li>
 
-					<li class="delivery-flexbox-description_steps">
+					<li class="delivery-flexbox__description_steps">
 						<p class="delivery_description">Строка 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
 					</li>
 
 				</ul> 
+
 			</div>
 
-
-
 		</section>
 
-		<section class="section__order">
+		<section class="section-order">
+
 			<h2 class="section-title">Сделать заказ</h2>
 
-				<div class="section__order_contacts">
-					<div class="section__order_contacts_form1"> <p class="section__order_contacts_opt1">Оставьте нам свои контакты</p>
-						<form>
-							<input class="section__order_contacts_form_contact" type="text" name="Name" placeholder="Как Вас зовут?" id="name"> <br>
-							<input class="section__order_contacts_form_contact" type="text" name="Phone" placeholder="Ваш номер телефона" id="phone"> <br>
-							<input class="section__order_contacts_form_contact" type="text" name="Email" placeholder="Или Email" id="email"> <br>
-							<input class="section__order_contacts_form_message" type="text" name="Message" placeholder="Пожелания или вопросы" id="message"> <br>
-							<button class="section__order_contacts_form_button" id="button">Отправить</button>
+			<div class="order-flexbox">
+
+				<div class="order-flexbox__form"> 
+					<p class="order-flexbox__form_text">Оставьте нам свои контакты</p>
+						<form id="form">
+							<input class="form-input-contact" type="text" name="Name" placeholder="Как Вас зовут?" id="name">
+							<input class="form-input-contact" type="text" name="Phone" placeholder="Ваш номер телефона" id="phone">
+							<input class="form-input-contact" type="text" name="Email" placeholder="или Email" id="email">
+							<textarea class="form-input-message" type="text" name="Message" placeholder="Пожелания или вопросы" id="message"></textarea>
+							<button class="form-input-button" id="button">Отправить</button>
+							<div class="form-message_nonsubmitted" id="formMessage">
+								<p>Ваше сообщение оправлено, и мы скоро с вами свяжемся!</p>
+							</div>
 						</form>
-					</div>
-
-					<div class="section__order_contacts_form2">
-						<p class="section__order_contacts_alt">или</p>
-					</div>
-
-					<div class="section__order_contacts_form3">
-						<p class="section__order_contacts_opt2">Свяжитесь с нами</p>
-						<p class="section__order_contacts_contactus1"><a class="link" href="tel:"+79031639036">8 903 163 90 36</a></p>
-						<p class="section__order_contacts_contactus2">(9:00 – 21:00, без выходных)</p>
-						<p class="picture"><a href="https://wa.me/79031639036"><img src="./images/whatsapp-logo.svg" height="30px"></a></p>
-					</div>
-
 				</div>
 
+				<div class="order-flexbox__or">
+					<p class="order-flexbox__or_text">или</p>
+				</div>
+
+				<div class="order-flexbox__contacts">
+					<p class="order-flexbox__contacts_text">Свяжитесь с нами</p>
+					<p class="contacts-phone"><a class="link" href="tel:"+79031639036">8 903 163 90 36</a></p>
+					<p class="contacts-hours">(9:00 – 21:00, без выходных)</p>
+					<p class="picture"><a href="https://wa.me/79031639036"><img src="./images/whatsapp-logo.svg" height="35px"></a></p>
+				</div>
+
+			</div>
+
 		</section>
 
-		<section>
-			<h2 class="section-title">Полезная информация</h2>
-				<article>
-					<img src="" alt="">
-					<h4>Статья 1</h4>
-				</article>
-				<article>
-					<img src="" alt="">
-					<h4>Статья 2</h4>
-				</article>
-				<article>
-					<img src="" alt="">
-					<h4>Статья 3</h4>
-				</article>
-			<div>Несколько цифр</div>
-		</section>
-		<section>
-			<h2 class="section-title">Несколько цифр</h2>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-		</section>
 	</main>
+
+
+
+
+
 
 	<footer class="footer">
 		<h5 class="footer__head">Oyster House</h5>
@@ -178,6 +167,9 @@
 		<p class="footer__text">Владивосток - Москва <br>2018</p>
 	
 	<script type="text/javascript" src="script_tabs_Adaptation.js"></script>
+	<script type="text/javascript" src="script_phonemask.js"></script>
+	<script type="text/javascript" src="script_formvalidation.js"></script>
+
 </footer>
 
 </body>

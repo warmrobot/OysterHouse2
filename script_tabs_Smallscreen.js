@@ -1,6 +1,6 @@
 if ($(window).width() <= 1023) {  
 
-           $(function(ourproductsSmallscreen){
+      $(function(ourproductsSmallscreen){
   			$('.ourproducts-flexbox__nav li:first').addClass('select');
         $('.ourproducts-flexbox__col1>div').hide().filter(':first').show();                       // Первой вкладке добавляется класс select
   			$('.ourproducts-flexbox__col3>div').hide().filter(':first').show();               // Скрываются все блоки с описанием вкладок кроме первого
@@ -11,5 +11,5 @@ if ($(window).width() <= 1023) {
       			$(this).parent().addClass('select');                                          // - добавляется класс 'select' для выбранной вкладки
     		return (false);                                                                 // - прерывается обработка события onClick
   			});
-		});
-       }
+		  });
+}
