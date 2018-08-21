@@ -6,10 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="eric-meyer-reset.min_.css">
   	<link rel="stylesheet" type="text/css" href="normalize.css">
-  	<link rel="stylesheet" type="text/css" href="style2.css">
+  	<link rel="stylesheet" type="text/css" href="style.prod.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="script_tabs_Smallscreen.js"></script>
-  	<script src="script_tabs_Largescreen.js"></script>
+  	<script src="tabs.js"></script>
   	<script src="jquery.maskedinput.min.js"></script>
   	<script type="text/javascript" src="script_datapolitics.js"></script>
 
@@ -33,37 +32,24 @@
 					<div class="ourproducts-flexbox">
 
 						<ul class="ourproducts-flexbox__nav">
-							<li><a id="tab1" href="#t1">Хасанские устрицы</a></li>
+							<li class="is-active"><a id="tab1" href="#t1">Хасанские устрицы</a></li>
 							<li><a id="tab2" href="#t2">Императорские устрицы</a></li>
 							<li><a id="tab3" href="#t3">Гребешок</a></li>
 							<li><a id="tab4" href="#t4">Краб</a></li>
 						</ul>
 
-						<div class="ourproducts-flexbox__col1">
-							<div id="t1">
-								<img src="./images/ustrica-hasanskaya.jpg" height=200px width=200px alt="">
-								<p> <strong>Цена:</strong> 1000 рублей за 10 шт.</p>
-							</div>
-							<div id="t2">Описание второй вкладки</div>
-							<div id="t3">Описание третьей вкладки</div>
-							<div id="t4">Описание четвертой вкладки</div>
-						</div>
-
-						<div class="ourproducts-flexbox__col2"></div>
-
-						<div class="ourproducts-flexbox__col3">
-							<div class="ourproducts-flexbox__col3--mobflex" id="t1">
-								<h3>Хасанские устрицы</h3>
-								<img src="./images/ustrica-hasanskaya.jpg" height=200px width=200px alt="">
+						<div class="ourproducts-content">
+							<div class="ourproducts-content__item is-active" id="t1">
+								<h3 class="ourproducts-content__title">Хасанские устрицы</h3>
+								<img class="ourproducts-content__image" src="./images/ustrica-hasanskaya.jpg" height=200 width=200 alt="" />
 								<p class="ourproducts-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 								<p class="ourproducts-price"><strong>Цена:</strong> 1000 рублей за 10 шт.</p>
-								<a href="#order">Заказать</a>
+								<a class="ourproducts-order-btn" href="#order">Заказать</a>
 							</div>
-							<div id="t2">Описание второй вкладки</div>
-							<div id="t3">Описание третьей вкладки</div>
-							<div id="t4">Описание четвертой вкладки</div>
+							<div class="ourproducts-content__item" id="t2">Описание второй вкладки</div>
+							<div class="ourproducts-content__item" id="t3">Описание третьей вкладки</div>
+							<div class="ourproducts-content__item" id="t4">Описание четвертой вкладки</div>
 						</div>
-
 					</div>
 
 				</div>
@@ -80,19 +66,19 @@
 
 					<li class="delivery-flexbox__images_steps">
 						<div class="delivery-imagewrap">
-							<img class="delivery_image" src="./images/smartphone.svg" alt="" height="60px">
+							<img class="delivery_image" src="./images/smartphone.svg" alt="" height=60>
 						</div>
 					</li>
 
 					<li class="delivery-flexbox__images_steps">
 						<div class="delivery-imagewrap">
-							<img class="delivery_image" src="./images/sea-waves.svg" alt="" height="60px">
+							<img class="delivery_image" src="./images/sea-waves.svg" alt="" height=60>
 						</div>
 					</li>
 
 					<li class="delivery-flexbox__images_steps">
 						<div class="delivery-imagewrap">
-							<img class="delivery_image" src="./images/aeroplane.svg" alt="" height="60px">
+							<img class="delivery_image" src="./images/aeroplane.svg" alt="" height=60>
 						</div>
 					</li>
 
@@ -147,9 +133,9 @@
 
 				<div class="order-flexbox__contacts">
 					<p class="order-flexbox__contacts_text">Свяжитесь с нами</p>
-					<p class="contacts-phone"><a class="link" href="tel:"+79031639036">8 903 163 90 36</a></p>
-					<p class="contacts-hours">(9:00 – 21:00, без выходных)</p>
-					<p class="picture"><a href="https://wa.me/79031639036"><img src="./images/whatsapp-logo.svg" height="40px"></a></p>
+					<p class="contacts-phone"><a class="link" href="tel:+7-903-163-90-36" rel="nofollow">8 (903) 163-90-36</a></p>
+					<p class="contacts-hours">(9:00–21:00, без выходных)</p>
+					<p class="picture"><a href="https://wa.me/79031639036" rel="nofollow"><img src="./images/whatsapp-logo.svg" height=40 /></a></p>
 				</div>
 
 			</div>
@@ -159,16 +145,14 @@
 	</main>
 
 	<footer class="footer">
-
 		<h5>Oyster House</h5>
-		<div><a href="https://www.instagram.com/oystersinmoscow"><img class="footer__instagram-logo" src="./images/instagram.svg" height="40px"></a></div>
+		<div><a href="https://www.instagram.com/oystersinmoscow"><img class="footer__instagram-logo" src="./images/instagram.svg" height="40" /></a></div>
 		<a href="" class="footer-link">Сертификат качества</a>
-		<p class="footer-text">Владивосток - Москва <br>2018</p>
+		<p class="footer__text">Владивосток - Москва <br />2018</p>
 	
-		<script type="text/javascript" src="script_tabs_Adaptation.js"></script>
-		<script type="text/javascript" src="script_phonemask.js"></script>
-		<script type="text/javascript" src="script_datapolitics.js"></script>
-		<script type="text/javascript" src="script_formvalidation.js"></script>
+		<script src="script_tabs_Adaptation.js"></script>
+		<script src="script_phonemask.js"></script>
+		<script src="script_formvalidation.js"></script>
 
 	</footer>
 

@@ -138,7 +138,6 @@ and (min-width: 1025px) {
 .section-ourproducts {
 	height: 970px;
 	background-color: #fff;
-	overflow: scroll;
 }
 
 .section-title {
@@ -216,6 +215,136 @@ and (min-width: 1025px) {
 	padding: 15% 15%;
 }
 
+/* Содержание таба */
+.ourproducts-content {
+	position: relative;
+	width: 90%;
+	height: 725px;
+
+	@media screen and (min-width: 1024px) {
+		width: 640px;
+		height: 480px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 25px;
+			bottom: 25px;
+			margin-left: 320px;
+			border-left: 1px solid #cddfed;
+		}
+	}
+
+	&__item {
+		display: none;
+
+		&.is-active {
+			display: block;
+		}
+	}
+
+	/* Заголовок таба */
+	&__title {
+		display: block;
+		font-weight: 600;
+		font-family: "OpenSans";
+		font-size: 15px;
+		text-align: center;
+		color: black;
+		padding-bottom: 50px;
+		padding-top: 30px;
+
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__image {
+		display: block;
+		border-radius: 50%;
+		margin: auto;
+
+		@media screen and (min-width: 1024px) {
+			float: left;
+			margin-top: 55px;
+			margin-left: 55px;
+		}
+	}
+
+}
+
+/*Описание продукта*/
+.ourproducts-text {
+	display: inline-block;
+	width: 80%; 
+	height: auto;
+	padding-top: 50px;
+	margin: auto;
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 15px;
+	text-align: justify;
+	
+	@media screen and (min-width: 1024px) {
+		display: block;
+		width: 245px; 
+		height: 325px;
+		margin-left: 360px;
+		text-align: justify;
+	}
+}
+
+/*Цена на большом экране*/
+.ourproducts-price {
+	display: inline-block;
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: black;
+	font-size: 15px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+	@media screen and (min-width: 1024px) {
+		display: block;
+		font-weight: 100;
+		font-family: "OpenSans";
+		color: black;
+		font-size: 15px;
+		text-align: left;
+		position: absolute;
+		bottom: 54px;
+		margin-left: 55px;
+		padding: 0;
+	}
+}
+
+.ourproducts-order-btn {
+	font-weight: 600;
+    font-family: "OpenSans";
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #e6eff6;
+    border: none;
+    padding: 15px 60px 15px 60px;
+    width: 80px;
+    margin: auto;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	
+
+	@media screen and (min-width: 1024px) {
+		position: absolute;
+		left: 360px;
+		bottom: 30px;
+		background-color: #fff;
+		border: solid 1px #cddfed;
+		padding: 15px 80px;
+		width: 83px;
+	}
+}
+
 .ourproducts-flexbox__col1 {				/*Вид блока-описания*/
 	display: none;
 }
@@ -246,36 +375,6 @@ and (min-width: 1025px) {
 	text-align: center;
 	padding-bottom: 50px;
 	padding-top: 30px;
-}	
-
-.ourproducts-flexbox__col3 img {			/*Картинка на малом экране*/
-	display: block;
-	border-radius: 50%;
-	margin: auto;
-}
-
-.ourproducts-text {							/*Описание продукта*/
-	display: inline-block;
-	width: 80%; 
-	height: auto;
-	padding-top: 50px;
-	margin: auto;
-	font-weight: 100;
-	font-family: "OpenSans";
-	color: black;
-	font-size: 15px;
-	text-align: justify;
-}
-
-.ourproducts-price {						/*Цена на малом экране*/
-	display: inline-block;
-	font-weight: 100;
-	font-family: "OpenSans";
-	color: black;
-	font-size: 15px;
-	margin: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 .ourproducts-flexbox__col3 a {				/*Кнопка заказа*/
@@ -350,7 +449,7 @@ and (min-width: 1024px) {
 		background: #f0f7fb;
 	}
 
-	.ourproducts-flexbox__nav li.select a {		/*Вид выбранной вкладки*/
+	.ourproducts-flexbox__nav li.is-active a {		/*Вид выбранной вкладки*/
 		background: #e6eff6;
 	}
 
@@ -382,17 +481,6 @@ and (min-width: 1024px) {
 		margin-left: 55px;
 	}
 
-	.ourproducts-flexbox__col1 p {				/*Цена на большом экране*/
-		font-weight: 100;
-		font-family: "OpenSans";
-		color: black;
-		font-size: 15px;
-		text-align: left;
-		position: absolute;
-		top: 413px;
-		margin-left: 55px;
-	}
-
 	.ourproducts-flexbox__col3--mobflex {
 		display: block;
 		height: 100%;
@@ -406,29 +494,6 @@ and (min-width: 1024px) {
 		display: none;
 	}
 
-	.ourproducts-text {							/*Описание продукта*/
-		display: block;
-		width: 245px; 
-		height: 325px;
-		padding: 0;
-		margin: 0;
-		position: absolute;
-		top: 50px;
-		text-align: justify;	
-	}
-
-	.ourproducts-price {						/*Цена на малом экране*/
-		display: none;
-	}
-
-	.ourproducts-flexbox__col3 a {				/*Кнопка заказа*/
-		position: absolute;
-		top: 395px;
-		background-color: #fff;
-		border: solid 1px #cddfed;
-		padding: 15px 80px;
-		width: 83px;	
-	}
 
 }
 
