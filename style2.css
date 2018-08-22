@@ -98,12 +98,12 @@
 	z-index: 2;
 }
 
-.header__title {
+.header-title {
 	z-index: 4;
 	position: relative;
 }
 
-.header__title h1 {
+.header-title h1 {
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: white;
@@ -131,7 +131,6 @@
 and (min-width: 1025px) {
 
 	.header {
-		background-color: #fff;	
 		background-image: url(./images/header_fl.jpeg);	
 	}
 }
@@ -796,56 +795,53 @@ and (min-width: 805px) {
 
 
 .footer {
-	background-color: #000;	
-	background-image: url(./images/footer_fl.jpg);	
-	background-position: left bottom;	
+	background-color: #000;
+	background-image: url(./images/footer_fl.jpg);
+	background-position: left bottom;
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	height: 450px;
 	text-align: center;
 	position: relative;
 }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 750px)  {
-  .footer {
-    background-color: red;
-    background-image: none;
-  }
+.footer h5 {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+	font-size: 35px;
+	padding-top: 40px;
 }
 
-  .footer__head {
-	font-weight: 100;
-	font-family: "OpenSans";
-	color: white;
-  	font-size: 35px;
-  	padding: 40px 0px 0px 0px;
-  }
-
-.instagram {
-	margin-top: 50px;
-	margin-bottom: 30px;
-}
-
-  .footer__links {
-	font-weight: 100;
-	font-family: "OpenSans";
-	color: white;
-  	text-decoration: underline;
-  	font-size: 15px;
-	line-height: 30px;
-  }
-
-  .footer__text {
-	font-weight: 100;
-	font-family: "OpenSans";
-	color: white;
-  	font-size: 15px;
-  	line-height: 30px;
-  	padding: 50px 0px;
-  }
-
-.picture_footer {
+.footer div {
 	text-align: center;
+}
+
+.footer__instagram-logo {
+	margin: 50px 0px 30px 0px;
+}
+
+.footer-link {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+	text-decoration: underline;
+	font-size: 15px;
+}
+
+.footer-text {
+	font-weight: 100;
+	font-family: "OpenSans";
+	color: white;
+	font-size: 15px;
+	line-height: 30px;
+	padding: 50px 0px;
+}
+
+@media only screen 
+and (min-width: 1025px) {
+
+	.footer {
+		background-image: url(./images/footer_fl.jpg);	
+	}
 }
