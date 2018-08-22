@@ -11,6 +11,7 @@
   	<script src="script_tabs_Smallscreen.js"></script>
   	<script src="script_tabs_Largescreen.js"></script>
   	<script src="jquery.maskedinput.min.js"></script>
+  	<script type="text/javascript" src="script_datapolitics.js"></script>
 
 </head>
 <body>
@@ -132,7 +133,8 @@
 							<input class="form-input-contact" type="text" name="Phone" placeholder="Ваш номер телефона" id="phone">
 							<input class="form-input-contact" type="text" name="Email" placeholder="или Email" id="email">
 							<textarea class="form-input-message" type="text" name="Message" placeholder="Пожелания или вопросы" id="message"></textarea>
-							<button class="form-input-button" id="button">Отправить</button>
+							<button class="form-input-button" id="button" name="submit">Отправить</button>
+							<input type="checkbox" id="politics" onclick="check();" autocomplete="off" checked="checked"/><label class="form-input-checkbox label"for="politics">Я даю согласие на</label> <a class="form-input-checkbox" href="">обработку персональных данных</a>
 							<div class="form-message_nonsubmitted" id="formMessage">
 								<p>Ваше сообщение оправлено, и мы скоро с вами свяжемся!</p>
 							</div>
@@ -147,7 +149,7 @@
 					<p class="order-flexbox__contacts_text">Свяжитесь с нами</p>
 					<p class="contacts-phone"><a class="link" href="tel:"+79031639036">8 903 163 90 36</a></p>
 					<p class="contacts-hours">(9:00 – 21:00, без выходных)</p>
-					<p class="picture"><a href="https://wa.me/79031639036"><img src="./images/whatsapp-logo.svg" height="35px"></a></p>
+					<p class="picture"><a href="https://wa.me/79031639036"><img src="./images/whatsapp-logo.svg" height="40px"></a></p>
 				</div>
 
 			</div>
@@ -165,6 +167,7 @@
 	
 		<script type="text/javascript" src="script_tabs_Adaptation.js"></script>
 		<script type="text/javascript" src="script_phonemask.js"></script>
+		<script type="text/javascript" src="script_datapolitics.js"></script>
 		<script type="text/javascript" src="script_formvalidation.js"></script>
 
 	</footer>
