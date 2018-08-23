@@ -275,11 +275,9 @@ and (min-width: 1025px) {
 
 /*Описание продукта*/
 .ourproducts-text {
-	display: inline-block;
 	width: 80%; 
 	height: auto;
-	padding-top: 50px;
-	margin: auto;
+	margin: 80px auto auto;
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
@@ -297,14 +295,12 @@ and (min-width: 1025px) {
 
 /*Цена на большом экране*/
 .ourproducts-price {
-	display: inline-block;
 	font-weight: 100;
 	font-family: "OpenSans";
 	color: black;
 	font-size: 15px;
-	margin: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	margin: 80px auto;
+	text-align: center;
 	
 	@media screen and (min-width: 1024px) {
 		display: block;
@@ -321,6 +317,7 @@ and (min-width: 1025px) {
 }
 
 .ourproducts-order-btn {
+	display: block;
 	font-weight: 600;
     font-family: "OpenSans";
     color: black;
